@@ -12,6 +12,7 @@ export default class TodoList extends React.Component {
       showAll: !this.state.showAll,
     })
   }
+  
   render() {
     const { todos, toggleCompleted } = this.props
     const filtered = todos.filter(td => !td.completed || this.state.showAll)
